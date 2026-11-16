@@ -6,3 +6,86 @@ body {
   background: #F5F0E6;
   line-height: 1.6;
 }
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #312E81;
+  line-height: 1.25;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/*Header*/
+.about-header { background: #312E81; }
+.sub-header {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.Ru-sports {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+
+.Ru-sports {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+}
+.nav a {
+  color: #C7C9F0;
+  margin-left: 1.75rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+.nav a:hover,
+.nav a.active {
+  color:#FFFFFF;
+  border-bottom-color:#F5B301;
+}
+
+/*Hero*/
+.about-hero {
+  position: relative;
+  min-height: 56vh;
+  display: flex;
+  align-items: flex-end;
+  background-color:#312E81;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 1.5rem;
+  isolation: isolate;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(20,18,60,0.92) 10%, rgba(49,46,129,0.55) 65%, rgba(49,46,129,0.3) 100%);
+  z-index: 0;
+}
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutus {
+  color: #F5B301;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.about-hero h1 {
+  color: #FFFFFF;
+  font-size: clamp(1.9rem, 4.2vw, 2.9rem);
+  margin-bottom: 1rem;
+}
+.para1 { color: #D9DAF2; font-size: 1.05rem; }
