@@ -112,3 +112,30 @@ img { display: block; max-width: 100%; }
   font-weight: 500;
 }
 
+/*About text block — slides up over the fixed image*/
+.about-text {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: -3rem auto 0;
+  background: #F5F0E6;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -12px 30px rgba(30, 30, 42, 0.12);
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+}
+.about-text-block h2 { font-size: 1.6rem; margin-bottom: 1rem; }
+.about-text-block > p { margin-bottom: 2rem; color: #312E81; }
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-align: left;
+}
+.mv h3 {
+  font-size: 1.02rem;
+  color: #1D4ED8;
+  margin-bottom: 0.4rem;
+}
+.mv p { color: #6B7280; font-size: 0.95rem; }
+
