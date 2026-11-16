@@ -1,0 +1,8 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1E1E2A;
+  background: #F5F0E6;
+  line-height: 1.6;
+}
