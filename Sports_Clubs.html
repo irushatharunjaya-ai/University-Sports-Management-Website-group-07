@@ -1,151 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-    <title>University Sports Club</title>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Features | Ruhuna Sports Hub</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-
-        
-        header {
-            background-color:rgb(4, 4, 68);
-            color: rgb(250, 244, 244);
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #222;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: silver;
-            text-decoration:none;
-            margin: 15px;
-        }
-        .welcome{
+        .welcome {
             background-color: #244861;
             color: #00FFFF;
-            padding: 15px;
+            padding: 25px 15px;
             text-align: center;
-            
         }
-        h2{
+
+        .welcome p {
+            margin-top: 8px;
+        }
+
+        h2 {
             text-align: center;
             color: #173D68;
             margin-top: 30px;
         }
-        h3{
+
+        h3 {
             color: rgb(20, 20, 85);
+            margin-bottom: 10px;
         }
-        .container{
+
+        .container {
             padding: 20px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 20px;
         }
-        .card{
+
+        .card {
             background-color: white;
-            width: 220px;
-            margin: 15px;
+            width: 230px;
             padding: 20px;
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 2px 5px gray;
         }
-        .card p{
-            columns: #555;
-         }
-         .card button:hover{
+
+        .card p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .card button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #173D68;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card button:hover {
             color: navy;
             background-color: rgb(104, 104, 116);
-
-         }
-         footer{
-            background-color: rgb(4, 4, 68);
-            color: white;
-            text-align: center;
-            padding: 20px;
-         }
+        }
     </style>
-   </head>
-        
- <body>
+</head>
+<body>
+    <!-- Consistent Header -->
     <header>
-        <h1><i>UNIVERSITY SPORTS CLUB</i></h1>
-        <p>Show who you are in sports</p>
+        <h2><span class="logo"></span>RUHUNA SPORTS</h2>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Sports_Clubs.html">Sports Clubs</a>
+            <a href="Main_features.html">Features</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="log.html">Login</a>
+            <a href="reg.html">Register</a>
+        </nav>
     </header>
-<nav>
-    <a href ="#">Home</a>
-    <a href="#">About</a>
-    <a href ="#">Sports Club</a>
-    <a href ="#">Events</a>
-    <a href="#">Contacts</a>
- </nav>
 
- <div class="welcome">
-    <h1>Welcome to UOR Sports Club</h1>
-    <p>Join the sports community and explore you<p>
- </div>
+    <div class="welcome">
+        <h1>Welcome to UOR Sports Club</h1>
+        <p>Join the sports community and explore your potential</p>
+    </div>
 
- <h2>Main Features</h2>
+    <h2>Main Features</h2>
 
- <div class="container">
-    <div class="card">
-        <h3>Sports Club Directory</h3>
-        <p>Explore diffrent sports club in our university</p>
-        <button>Explore</button>
+    <div class="container">
+        <div class="card">
+            <h3>Sports Club Directory</h3>
+            <p>Explore different sports clubs in our university</p>
+            <a href="Sports_Clubs.html"><button type="button">Explore</button></a>
         </div>
 
         <div class="card">
             <h3>Join a club</h3>
-            <p>Discover and join your favourit club</p>
-            <button>Join now</button>
+            <p>Discover and join your favourite club</p>
+            <a href="reg.html"><button type="button">Join now</button></a>
         </div>
 
         <div class="card">
-            <h3>Events & Competitions</h3>
-            <p>Explore upcoming evnts and competitions </p>
-            <button>View Events</button>
+            <h3>Events &amp; Competitions</h3>
+            <p>Explore upcoming events and competitions</p>
+            <button type="button">View Events</button>
         </div>
 
         <div class="card">
             <h3>Fixture and results</h3>
-            <p>View match schedule and and competition results</p>
-            <button>View schedule</button>
+            <p>View match schedule and competition results</p>
+            <button type="button">View schedule</button>
         </div>
 
         <div class="card">
             <h3>Training schedules</h3>
-            <p>check training days,times and venues</p>
-            <button>View schedule</button>
+            <p>Check training days, times and venues</p>
+            <button type="button">View schedule</button>
         </div>
 
         <div class="card">
             <h3>Achievements</h3>
             <p>Let's see our university achievements</p>
-            <button>Explore</button>
+            <button type="button">Explore</button>
         </div>
 
-         <div class="card">
+        <div class="card">
             <h3>Sports Gallery</h3>
             <p>Explore the photos of university sports activities</p>
-            <button>View Gallery</button>
+            <button type="button">View Gallery</button>
         </div>
+    </div>
 
-     </div>
-<footer>
-<p>University Sports Clubs | 2026</p>
-<p> All Rights Reserved®</p>
-</footer>
-
-
+    <!-- Consistent Footer -->
+    <footer>
+        <p>© 2026 Ruhuna Sports. All Rights Reserved.</p>
+        <p>Designed by 48 batch Department of Computer Science Students</p>
+    </footer>
 </body>
 </html>
-
