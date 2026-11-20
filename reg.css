@@ -1,0 +1,130 @@
+ 
+        .test{
+            background-color:royalblue;
+            border-radius: 16px;
+            padding: 30px;
+            margin: auto;
+            font-size:30px;
+            margin-bottom:20px;
+        }
+        .part{
+            display:flex;
+            list-style:none;
+            gap:100px;
+            align-items: center;
+            margin:0;
+            padding:0;
+        }
+
+        .join-btn{
+             background-color: aliceblue;
+            padding: 8px;
+            font-weight: bold;
+            border-radius:999px;
+            
+
+        }
+       
+        
+        .sports{
+            background-image: url('https://tse3.mm.bing.net/th/id/OIP.KedK1f0ObUxdI852DH-2_gHaE7?r=0&w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3');
+            height: 400px;
+            width: 1000px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 12px;
+
+        }
+        .join-banner{
+            display: flex;
+            align-items: center;
+            background:#3535aeaf;
+            border-radius: 16px;
+
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 70px;
+            color:aquamarine;
+        }
+        .club{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size:30px;
+            text-align: center;
+            
+        }
+        .next{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+        .member{
+            
+            background:#3535aeaf;
+            height: 200px;
+            border-radius: 16px;
+            align-items: center;
+
+
+
+        }
+        .up{
+            font-size: 20px;
+            text-align: center;
+        }
+        .break{
+            background:#3535aeaf;
+            display:flex;
+            border-radius: 16px;
+            height:75px;
+            align-items: center;
+            font-size: 30px;
+            gap:100px;
+            padding:30px;
+            justify-content: center;
+            color:black;
+
+        }
+        .reg{
+            border-radius: 16px;
+            background-color: darkcyan;
+            width:500px;
+            padding:1px;
+
+        }
+        .details{
+            font-size:25px;
+        }
+        select{
+            font-size:20px ;
+        }
+        .facts{
+            background-color: darkcyan;
+            width:500px;
+            height:900px;
+            justify-content: center;
+            border-radius: 16px;
+            text-align: center;
+            margin:auto;
+
+        }
+        .log{
+            font-size: 20px;
+            text-align: center;
+        }
+        .create{
+            
+            background-color: aqua;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        
