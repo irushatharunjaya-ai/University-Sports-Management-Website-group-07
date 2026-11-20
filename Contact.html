@@ -3,87 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+    <title>Contact | Ruhuna Sports Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
-    <div class="test">
-        <ul class="part">
-            <li>About</li>
-            <li>Sports Club</li>
-            <li>Events</li>
-            <li>Achievements</li>
-            <li>Gallery</li>
-            <li class="join-btn">Contact</li>
-            <li>Join a Club</li>
-        </ul>
- </div>
-     
-     <div class="join-banner">
-    
+    <!-- Consistent Header -->
+    <header>
+        <h2><span class="logo"></span>RUHUNA SPORTS</h2>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Sports_Clubs.html">Sports Clubs</a>
+            <a href="Main_features.html">Features</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="log.html">Login</a>
+            <a href="reg.html">Register</a>
+        </nav>
+    </header>
+
+    <div class="join-banner">
         <div class="join-text">
             <h1><i>Let's talk <br> Sport</i></h1>
-            <p class="club">Questions about clubs,events or membership?<br>Send our team a message.</p>
+            <p class="club">Questions about clubs, events or membership?<br>Send our team a message.</p>
         </div>
-    <div class="sports"></div>
-    
+        <div class="sports"></div>
     </div>
 
     <div class="flex">
+        <div class="details">
+            <div class="contact">Contact Details</div><br><br>
+            <div>
+                <b>Email</b><br>
+                <a href="mailto:sports@university.edu">sports@university.edu</a>
+            </div>
 
-    <div class="details">
-        <div class="contact">Contact Details</div><br><br>
-        <div>
-            <b>Email</b><br>
-            <a href="sports@university.edu">sports@university.edu</a>
-        </div>
+            <div>
+                <b>Phone</b><br>
+                +94 77 7770000
+            </div>
 
-        <div>
-            <b>Phone</b><br>
-            +94 91 000 0000
-        </div>
-
-        <div>
-            <b>Location</b><br>
-            Sports & Recreation Unit <br>
-            University Of Ruhuna <br>
-            Mathara <br>
-            Sri Lanka 
-        </div>
+            <div>
+                <b>Location</b><br>
+                Sports &amp; Recreation Unit <br>
+                University of Ruhuna <br>
+                Matara <br>
+                Sri Lanka
+            </div>
         </div>
 
         <div class="msg">
+            <div class="pwd">Send a Message</div><br><br>
             <p class="about">
-                <div class="pwd">Send a Message</div><br><br>
-            Your name:<input type="text"><br><br>
-            Email Address:<input type="email"><br><br>
-            What is your message about:
-            <input type="text" placeholder="Write your message here...."><br><br>
-            <button class="but">Send  Message</button>
+                <label for="sender-name">Your name:</label>
+                <input id="sender-name" type="text"><br><br>
+
+                <label for="sender-email">Email Address:</label>
+                <input id="sender-email" type="email"><br><br>
+
+                <label for="sender-message">What is your message about:</label>
+                <input id="sender-message" type="text" placeholder="Write your message here...."><br><br>
+
+                <button type="submit" class="but">Send Message</button>
             </p>
-
         </div>
-        
-
-            
-        
     </div>
 
-    <div class="end">
-       <p class="exp">Explore</p>
-       <div class="clubs">Sports clubs & Events Gallery</div>
-       <div class="in">Get Invloved</div>
-       <div class="us">Register Contact us member Login</div>
-       <div class="con">Contact</div>
-       <div class="mem">Membership</div>
-
-    </div>
-       
-       
-       
-       
-        
-
-    
+    <!-- Consistent Footer -->
+    <footer>
+        <p>© 2026 Ruhuna Sports. All Rights Reserved.</p>
+        <p>Designed by 48 batch Department of Computer Science Students</p>
+    </footer>
 </body>
 </html>

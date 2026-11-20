@@ -1,130 +1,151 @@
- 
-        .test{
-            background-color:royalblue;
-            border-radius: 16px;
-            padding: 30px;
-            margin: auto;
-            font-size:30px;
-            margin-bottom:20px;
-        }
-        .part{
-            display:flex;
-            list-style:none;
-            gap:100px;
-            align-items: center;
-            margin:0;
-            padding:0;
-        }
+/* Join Banner */
+.join-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #3535aeaf;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
 
-        .join-btn{
-             background-color: aliceblue;
-            padding: 8px;
-            font-weight: bold;
-            border-radius:999px;
-            
+.join-text {
+    flex: 1 1 300px;
+}
 
-        }
-       
-        
-        .sports{
-            background-image: url('https://tse3.mm.bing.net/th/id/OIP.KedK1f0ObUxdI852DH-2_gHaE7?r=0&w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3');
-            height: 400px;
-            width: 1000px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 12px;
+.sports {
+    background-image: url('https://tse3.mm.bing.net/th/id/OIP.KedK1f0ObUxdI852DH-2_gHaE7?r=0&w=2048&h=1365&rs=1&pid=ImgDetMain&o=7&rm=3');
+    height: 400px;
+    max-width: 100%;
+    flex: 1 1 480px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
 
-        }
-        .join-banner{
-            display: flex;
-            align-items: center;
-            background:#3535aeaf;
-            border-radius: 16px;
+.join-banner h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(2.2rem, 5vw, 4.3rem);
+    color: aquamarine;
+}
 
-        }
-        h1{
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 70px;
-            color:aquamarine;
-        }
-        .club{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size:30px;
-            text-align: center;
-            
-        }
-        .next{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 40px;
-            font-weight: bold;
-            
-        }
-        .member{
-            
-            background:#3535aeaf;
-            height: 200px;
-            border-radius: 16px;
-            align-items: center;
+.club {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: clamp(1.1rem, 2.2vw, 1.85rem);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 12px;
+}
 
+/* Membership Intro Section */
+.member {
+    background: #3535aeaf;
+    min-height: 200px;
+    border-radius: 16px;
+    padding: 24px 16px;
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.member h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+    font-weight: bold;
+    color: #ffffff;
+}
 
-        }
-        .up{
-            font-size: 20px;
-            text-align: center;
-        }
-        .break{
-            background:#3535aeaf;
-            display:flex;
-            border-radius: 16px;
-            height:75px;
-            align-items: center;
-            font-size: 30px;
-            gap:100px;
-            padding:30px;
-            justify-content: center;
-            color:black;
+.next {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.85rem);
+    text-align: center;
+    color: #ffffff;
+    margin-top: 8px;
+}
 
-        }
-        .reg{
-            border-radius: 16px;
-            background-color: darkcyan;
-            width:500px;
-            padding:1px;
+.up {
+    font-size: 1.15rem;
+    text-align: center;
+    color: #f4f4f4;
+    margin-top: 8px;
+    max-width: 720px;
+}
 
-        }
-        .details{
-            font-size:25px;
-        }
-        select{
-            font-size:20px ;
-        }
-        .facts{
-            background-color: darkcyan;
-            width:500px;
-            height:900px;
-            justify-content: center;
-            border-radius: 16px;
-            text-align: center;
-            margin:auto;
+/* Steps Strip */
+.break {
+    background: #3535aeaf;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border-radius: 16px;
+    min-height: 75px;
+    align-items: center;
+    font-size: clamp(1.1rem, 2.4vw, 1.85rem);
+    gap: 24px 80px;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 1200px;
+    justify-content: center;
+    color: black;
+}
 
-        }
-        .log{
-            font-size: 20px;
-            text-align: center;
-        }
-        .create{
-            
-            background-color: aqua;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
-        
+/* Registration Form Card */
+.facts {
+    background-color: darkcyan;
+    width: 500px;
+    max-width: 94%;
+    min-height: 900px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 30px auto 40px;
+    padding: 20px 16px;
+}
+
+.reg {
+    border-radius: 16px;
+    background-color: darkcyan;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.details {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.facts input,
+.facts select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.log {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.create {
+    background-color: aqua;
+    font-size: 1.2rem;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid #008b8b;
+    cursor: pointer;
+}
+
+.create:hover {
+    background-color: #00e5e5;
+}

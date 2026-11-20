@@ -1,190 +1,132 @@
- .test{
-            background-color:royalblue;
-            border-radius: 16px;
-            padding: 30px;
-            margin: auto;
-            font-size:30px;
-            margin-bottom:20px;
-        }
-.part{
-            display:flex;
-            list-style:none;
-            gap:100px;
-            align-items: center;
-            margin:0;
-            padding:0;
-        }
-.join-btn{
-             background-color: aliceblue;
-            padding: 8px;
-            font-weight: bold;
-            border-radius:999px;
-            
+/* Banner Section */
+.join-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #3535aeaf;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
 
-        }
-  .join-banner{
-            display: flex;
-            align-items: center;
-            background:#3535aeaf;
-            border-radius: 16px;
+.join-text {
+  flex: 1 1 320px;
+}
 
-        }
-    .sports{
-            background-image: url('https://img.freepik.com/premium-photo/blue-sport-team-backdrop-blue-background-ornament-modern-sporty_46383-6647.jpg');
-            height: 400px;
-            width: 1000px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 12px;
-    }
-    h1{
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 70px;
-            color:aquamarine;
-        }
+.sports {
+  background-image: url('https://img.freepik.com/premium-photo/blue-sport-team-backdrop-blue-background-ornament-modern-sporty_46383-6647.jpg');
+  height: 400px;
+  max-width: 100%;
+  flex: 1 1 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
 
-  .club{
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size:30px;
-            text-align: center;
-  }
+.join-banner h1 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  color: aquamarine;
+}
 
-  .details{
-    width: 350px;
-    background-color: aquamarine;
-    border-radius: 16px;
-    padding:15px;
-    font-family: Arial;
-    font-size: 15px;
-    text-align: center;
-    
-  }
-  .contact{
-    background-color:rgb(114, 32, 147);
-    padding:15px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-  }
-  .msg{
-    background-color:aquamarine;
-    padding:15px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    
+.club {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: clamp(1.1rem, 2.2vw, 1.8rem);
+  text-align: center;
+  color: #ffffff;
+  margin-top: 12px;
+}
 
-  }
-  .about{
-    font-size: 20px;
-   
+/* Contact Details & Message Form Layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 20px;
+  margin: 30px auto 40px;
+  max-width: 1200px;
+  padding: 0 16px;
+}
 
-  }
-  .flex{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    gap:50px;
-    
+.details {
+  width: 350px;
+  max-width: 100%;
+  background-color: aquamarine;
+  border-radius: 16px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
 
-  }
-  .but{
-    background-color: aqua;
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 15px;
-    cursor: pointer;
-  }
+.details > div {
+  margin-bottom: 14px;
+}
 
-  .pwd{
-    background-color:rgb(114, 32, 147);
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 20px;
-    padding:10px;
-  }
+.contact {
+  background-color: rgb(114, 32, 147);
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
 
-  .end{
-    display: flex;
-    gap:30px;
-    background-color:rgb(13, 193, 178);
-    height: 80px;
-    border-radius: 20px;
-    padding: 35px;
-    text-align: center;
-    margin-top: 30px;
-    width:1500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    
+.msg {
+  flex: 1 1 360px;
+  max-width: 560px;
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-  }
-  .clubs{
-    background-color: rgb(127, 193, 255);
-    font-size: 25px;
-    border-radius: 20px;
-    padding: 20px;
-    height:50px;
-    text-align: center;
-    cursor: pointer;
-    
-  }
+.about {
+  font-size: 18px;
+  font-weight: normal;
+}
 
-  .in{
-     background-color: rgb(127, 193, 255);
-    font-size: 25px;
-    border-radius: 20px;
-    height: 50px;
-    text-align: center;
-    padding:20px;
-    cursor: pointer;
-  }
+.about input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #888;
+  margin-top: 6px;
+  width: 100%;
+  max-width: 360px;
+}
 
-  .us{
-     background-color: rgb(127, 193, 255);
-    font-size: 25px;
-    border-radius: 20px;
-    height: 50px;
-    text-align: center;
-    padding:20px;
-    cursor: pointer;
-  }
+.but {
+  background-color: aqua;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #009999;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
-  .con{
-     background-color: rgb(127, 193, 255);
-    font-size: 25px;
-    border-radius: 20px;
-    height: 50px;
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-  }
+.but:hover {
+  background-color: #00e5e5;
+}
 
-  .mem{
-     background-color: rgb(127, 193, 255);
-    font-size: 25px;
-    border-radius: 20px;
-    height: 50px;
-    text-align: center;
-    padding: 20px;
-    cursor: pointer;
-
-  }
-  
-
-  .exp{
-    color: black;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-  }
+.pwd {
+  background-color: rgb(114, 32, 147);
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 20px;
+  padding: 12px;
+}
