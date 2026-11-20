@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register | Ruhuna Sports Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reg.css">
 </head>
 <body>
-    
+    <!-- Consistent Header -->
+    <header>
+        <h2><span class="logo"></span>RUHUNA SPORTS</h2>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Sports_Clubs.html">Sports Clubs</a>
+            <a href="Main_features.html">Features</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+            <a href="log.html">Login</a>
+            <a href="reg.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Player &amp; Club Registration</h2>
+            <p>Register to join university sports teams, clubs, and upcoming tournaments at the University of Ruhuna[cite: 2].</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="full-name">Full Name:</label><br>
+                    <input id="full-name" name="full-name" type="text" placeholder="Enter your full name" required>
+                </p><br>
+
+                <p>
+                    <label for="student-id">Student Number (SC Number):</label><br>
+                    <input id="student-id" name="student-id" type="text" placeholder="e.g., SC/2026/XXXXX" required>
+                </p><br>
+
+                <p>
+                    <label for="reg-email">University Email:</label><br>
+                    <input id="reg-email" name="reg-email" type="email" placeholder="Enter your email" required>
+                </p><br>
+
+                <p>
+                    <label for="sport-select">Preferred Sport / Club:</label><br>
+                    <select id="sport-select" name="sport-select">
+                        <option value="cricket">Cricket</option>
+                        <option value="football">Football</option>
+                        <option value="rugby">Rugby</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="volleyball">Volleyball</option>
+                        <option value="elle">Elle</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="table-tennis">Table Tennis</option>
+                        <option value="athletics">Athletics</option>
+                    </select>
+                </p><br>
+
+                <p>
+                    <label for="reg-password">Password:</label><br>
+                    <input id="reg-password" name="reg-password" type="password" placeholder="Create a password" required>
+                </p><br>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Consistent Footer -->
+    <footer>
+        <p>© 2026 Ruhuna Sports. All Rights Reserved.</p>
+        <p>Designed by 48 batch Department of Computer Science Students</p>
+    </footer>
 </body>
 </html>
