@@ -20,7 +20,7 @@ main {
 
 /* Navigation Bar (Same Across All Pages) */
 header {
-    background-color: #601A16;
+    background-color: #10233f;
     color: white;
     padding: 15px 30px;
     display: flex;
@@ -41,7 +41,7 @@ header {
     background-image: url('logo.jpg.webp');
     background-size: cover;
     background-position: center;
-    flex-shrink: 0;
+
 }
 
 header h2 {
@@ -80,11 +80,12 @@ nav a.active {
 
 .top h1 {
     font-size: 38px;
+    color: #8e0d04;
     margin-bottom: 10px;
 }
 
 .top h2 {
-    color: #f5a623;
+    color: black;
     margin-bottom: 20px;
 }
 
