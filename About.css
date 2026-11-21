@@ -11,6 +11,32 @@ body {
   line-height: 1.6;
 }
 
+header h2 {
+    color: #f5a623;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+  font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f5a623;
+}
+
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
   color: #312E81;
@@ -333,4 +359,8 @@ img {
   .stats-section {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+footer{
+  font-family: 'Times New Roman', Times, serif;
 }
