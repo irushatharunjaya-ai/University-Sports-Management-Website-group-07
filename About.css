@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -7,70 +11,68 @@ body {
   line-height: 1.6;
 }
 
+header h2 {
+    color: #f5a623;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+  font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f5a623;
+}
+
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
   color: #312E81;
   line-height: 1.25;
 }
 
-a { color: inherit; text-decoration: none; }
-img { display: block; max-width: 100%; }
-
-/*Header*/
-.about-header { background: #312E81; }
-.sub-header {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.Ru-sports {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  color: #FFFFFF;
-  font-size: 1.25rem;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-.Ru-sports {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  color: #FFFFFF;
-  font-size: 1.25rem;
-}
-.nav a {
-  color: #C7C9F0;
-  margin-left: 1.75rem;
-  font-weight: 500;
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-}
-.nav a:hover,
-.nav a.active {
-  color:#FFFFFF;
-  border-bottom-color:#F5B301;
-}
-
-/*Hero*/
+/* Hero */
 .about-hero {
   position: relative;
   min-height: 56vh;
   display: flex;
   align-items: flex-end;
-  background-color:#312E81;
+  background-color: #312E81;
   background-size: cover;
   background-position: center;
   padding: 3rem 1.5rem;
   isolation: isolate;
 }
+
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(20,18,60,0.92) 10%, rgba(49,46,129,0.55) 65%, rgba(49,46,129,0.3) 100%);
+  background: linear-gradient(0deg, rgba(20, 18, 60, 0.92) 10%, rgba(49, 46, 129, 0.55) 65%, rgba(49, 46, 129, 0.3) 100%);
   z-index: 0;
 }
+
 .about-content {
   position: relative;
   z-index: 1;
@@ -78,19 +80,25 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   text-align: center;
 }
+
 .aboutus {
   color: #F5B301;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+
 .about-hero h1 {
   color: #FFFFFF;
   font-size: clamp(1.9rem, 4.2vw, 2.9rem);
   margin-bottom: 1rem;
 }
-.para1 { color: #D9DAF2; font-size: 1.05rem; }
 
-/*Full-width baseball banner (parallax)*/
+.para1 {
+  color: #D9DAF2;
+  font-size: 1.05rem;
+}
+
+/* Full-width baseball banner (parallax) */
 .baseballimage {
   position: relative;
   width: 100%;
@@ -98,8 +106,9 @@ img { display: block; max-width: 100%; }
   min-height: 380px;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* keeps the image still while the page scrolls over it */
+  background-attachment: fixed;
 }
+
 .baseballcap {
   position: absolute;
   left: 1.5rem;
@@ -112,7 +121,7 @@ img { display: block; max-width: 100%; }
   font-weight: 500;
 }
 
-/*About text block — slides up over the fixed image*/
+/* About text block — slides up over the fixed image */
 .about-text {
   position: relative;
   z-index: 1;
@@ -124,77 +133,117 @@ img { display: block; max-width: 100%; }
   padding: 4rem 1.5rem 3rem;
   text-align: center;
 }
-.about-text-block h2 { font-size: 1.6rem; margin-bottom: 1rem; }
-.about-text-block > p { margin-bottom: 2rem; color: #312E81; }
+
+.about-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.about-text > p {
+  margin-bottom: 2rem;
+  color: #312E81;
+}
+
 .mission-vision {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   text-align: left;
 }
+
 .mv h3 {
   font-size: 1.02rem;
   color: #1D4ED8;
   margin-bottom: 0.4rem;
 }
-.mv p { color: #6B7280; font-size: 0.95rem; }
 
-/*story Section*/
+.mv p {
+  color: #6B7280;
+  font-size: 0.95rem;
+}
+
+/* Story Section */
 .story {
-        max-width:1140px ;
-        margin: 0 auto;
-        padding: 1rem 1.5rem 4rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
 }
 
-.timeline{
+.story-head {
+  margin-bottom: 2rem;
+}
+
+.story-head p {
+  color: #6B7280;
+  margin-top: 0.35rem;
+}
+
+.timeline {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  position:relative;
+  position: relative;
 }
 
-.timeline::before{
-  content:"";
+.timeline::before {
+  content: "";
   position: absolute;
   top: 7px;
-  left:0;
+  left: 0;
   right: 0;
-  height:2px;
-  background:#d9d3c4;
+  height: 2px;
+  background: #d9d3c4;
 }
 
-.items{
+.items {
   position: relative;
   padding-top: 2rem;
 }
 
-.item-dot{
+.item-dot {
   position: absolute;
-  top:0;
-  left:0;
-  width:16px;
-  height:16px;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background:#1D4ED8;
-  border:3px solid #F5F0E6;
+  background: #1D4ED8;
+  border: 3px solid #F5F0E6;
 }
 
-.items h3{
+.items h3 {
   font-size: 1.05rem;
-  color:#312E81;
-  margin-bottom:0.4rem;
+  color: #312E81;
+  margin-bottom: 0.4rem;
 }
 
-.items p{
-  color:#6B7280;
+.items p {
+  color: #6B7280;
   font-size: 0.92rem;
 }
 
+/* Physical Education Section */
 .pe-section {
   max-width: 1140px;
   margin: 0 auto;
   padding: 1rem 1.5rem 4rem;
 }
+
+.section-head {
+  margin-bottom: 2rem;
+}
+
+.section-head p {
+  color: #6B7280;
+  margin-top: 0.35rem;
+}
+
+.pe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
 .info-card {
   background: #FFFFFF;
   border-radius: 12px;
@@ -202,16 +251,19 @@ img { display: block; max-width: 100%; }
   border-top: 3px solid #1D4ED8;
   box-shadow: 0 2px 10px rgba(49, 46, 129, 0.06);
 }
+
 .info-card h3 {
   font-size: 1.05rem;
   margin-bottom: 0.5rem;
   color: #312E81;
 }
+
 .info-card p {
   color: #6B7280;
   font-size: 0.92rem;
 }
-/*Full-width facday banner (parallax)*/
+
+/* Full-width facday banner (parallax) */
 .facdayimage {
   position: relative;
   width: 100%;
@@ -219,8 +271,9 @@ img { display: block; max-width: 100%; }
   min-height: 380px;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* keeps the image still while the page scrolls over it */
+  background-attachment: fixed;
 }
+
 .facdaycap {
   position: absolute;
   left: 1.5rem;
@@ -232,29 +285,42 @@ img { display: block; max-width: 100%; }
   font-size: 0.9rem;
   font-weight: 500;
 }
-/*Values strip*/
+
+/* Values strip */
 .values-strip {
   background: #FFFFFF;
   border-top: 1px solid #E4DFD2;
   border-bottom: 1px solid #E4DFD2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width:1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
+
 .value-card {
   padding: 2.5rem 2rem;
   text-align: center;
   border-left: 1px solid #E4DFD2;
 }
-.value-card:first-child { border-left: none; }
-.value-card h3 { color: #1D4ED8; margin-bottom: 0.5rem; font-size: 1.1rem; }
-.value-card p { color: #6B7280; font-size: 0.95rem; }
 
+.value-card:first-child {
+  border-left: none;
+}
 
-/*Stats Section*/
+.value-card h3 {
+  color: #1D4ED8;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.value-card p {
+  color: #6B7280;
+  font-size: 0.95rem;
+}
+
+/* Stats Section */
 .stats-section {
-  max-width: var(--max-width);
+  max-width: 1140px;
   margin: 0 auto;
   padding: 3.5rem 1.5rem;
   display: grid;
@@ -262,29 +328,39 @@ img { display: block; max-width: 100%; }
   gap: 1.5rem;
   text-align: center;
 }
+
 .stat-item {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
 }
+
 .stat-number {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 2.75rem);
-  color: var(--royal);
+  color: #1D4ED8;
 }
+
 .stat-label {
-  color: var(--slate);
+  color: #6B7280;
   font-size: 0.9rem;
   font-weight: 500;
 }
-/* Footer*/
-.about-footer {
-  background: #312E81;
-  color: #B7B9E3;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.85rem;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mission-vision,
+  .timeline,
+  .values-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-
+footer{
+  font-family: 'Times New Roman', Times, serif;
+}

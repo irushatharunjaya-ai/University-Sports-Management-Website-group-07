@@ -1,0 +1,62 @@
+/* Page Heading & Subtext */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(2.2rem, 5vw, 3.75rem);
+    color: blue;
+    margin-top: 24px;
+}
+
+.acc {
+    text-align: center;
+    font-size: clamp(1.1rem, 2.5vw, 1.85rem);
+    margin: 10px auto 20px;
+}
+
+/* Login Card Container */
+.log {
+    background-color: cadetblue;
+    max-width: 650px;
+    margin: 25px auto 40px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 20px 45px;
+}
+
+.log h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 10px;
+}
+
+.log h3 {
+    font-size: clamp(1.2rem, 2.8vw, 2rem);
+    margin-bottom: 20px;
+}
+
+.log p {
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    line-height: 1.6;
+}
+
+.log input[type="email"],
+.log input[type="password"],
+.log input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    font-size: 1rem;
+    margin-top: 6px;
+}
+
+.log button {
+    background-color: aqua;
+    font-size: 1.1rem;
+    padding: 10px 22px;
+    border-radius: 8px;
+    border: 1px solid #009999;
+    cursor: pointer;
+}
+
+.log button:hover {
+    background-color: #00e5e5;
+}
